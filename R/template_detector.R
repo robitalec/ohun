@@ -91,7 +91,7 @@ template_detector <-
     sel_table_list <-
       warbleR:::pblapply_wrblr_int(
         pbar = pb,
-        X = 1:(length(template.correlations) - 1),
+        X = seq_len(length(template.correlations) - 1),
         cl = cl,
         FUN = function(i) {
           # extract data for a dyad

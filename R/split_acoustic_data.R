@@ -151,7 +151,7 @@ split_acoustic_data <-
                   ignore.case = TRUE
                 ),
                 "-",
-                1:(length(sq) - 1),
+                seq_len(length(sq) - 1),
                 ".wav"
               ),
               start = sq[-length(sq)],
@@ -184,7 +184,7 @@ split_acoustic_data <-
             sound.files = paste0(
               gsub("\\.wav$|\\.wac$|\\.mp3$|\\.flac$", "", x, ignore.case = TRUE),
               "-",
-              1:(length(sq) - 1),
+              seq_len(length(sq) - 1),
               ".wav"
             ),
             start = sq[-length(sq)],

@@ -111,7 +111,7 @@ find_templates <-
 
     # get polygon for each sub space
     if (n.sub.spaces > 1)
-      polys <- lapply(1:nx, function(i) {
+      polys <- lapply(seq_len(nx), function(i) {
         n <- max(2, floor(100 * dx[i])) # 100 equivalent to edges in pie()
         P <- t2xy(seq.int(x[i], x[i + 1], length.out = n))
 
@@ -187,7 +187,7 @@ find_templates <-
 
     names(centroids) <-
       if (length(centroids) > 1)
-        c("centroid", paste0("templ-", 1:(length(centroids) - 1)))
+        c("centroid", paste0("templ-", seq_len(length(centroids) - 1)))
     else
       "centroid"
 
