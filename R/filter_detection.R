@@ -51,9 +51,6 @@
 #' }
 #' @seealso \code{\link{label_detection}}
 #' @author Marcelo Araya-Salas (\email{marcelo.araya@@ucr.ac.cr}).
-#last modification on oct-31-2021 (MAS)
-
-# function to filter detection based on overlap
 filter_detection <-
   function(detection,
            by = "overlap",

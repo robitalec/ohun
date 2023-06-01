@@ -69,7 +69,6 @@
 #' }
 #' @seealso \code{\link{optimize_energy_detector}}, \code{\link{template_correlator}}, \code{\link{template_detector}}
 #' @author Marcelo Araya-Salas (\email{marcelo.araya@@ucr.ac.cr}).
-#last modification on dec-21-2021 (MAS)
 optimize_template_detector <-
   function(template.correlations,
            reference,
