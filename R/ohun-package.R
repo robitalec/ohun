@@ -45,5 +45,3 @@
 #' @name ohun
 #' @details License: GPL (>= 2)
 NULL
-#> NULL
-#'
