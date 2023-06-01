@@ -20,7 +20,7 @@ test_that("merging", {
   lbh_reference2 <-
     rbind(as.data.frame(lbh_reference[c(3, 10),]), W)
 
-  lbh_reference2$selec <- 1:nrow(lbh_reference2)
+  lbh_reference2$selec <- seq_len(nrow(lbh_reference2))
 
   # merging
   mo <- merge_overlaps(X = lbh_reference2)

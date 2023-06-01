@@ -55,7 +55,7 @@ test_that("bipartite matching", {
                     end = c(1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5)
   )
 
-  ref$selec <- 1:nrow(ref)
+  ref$selec <- seq_len(nrow(ref))
 
   # detection
   det <- data.frame(sound.files = "1.wav",
@@ -63,7 +63,7 @@ test_that("bipartite matching", {
                     end = c(1.25, 3.1, 4.1, 4.8, 6.5, 7.5, 9.25, 1.5)
   )
 
-  det$selec <- 1:nrow(det)
+  det$selec <- seq_len(nrow(det))
 
   # diagnose
   ld <- label_detection(reference = ref, detection = det)
