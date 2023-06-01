@@ -133,7 +133,7 @@ feature_reference <-
                                 is.nan(output$min.gap.duration)] <- NA
 
       # order columns
-      output <- output[, c(ncol(output), 1:(ncol(output) - 1))]
+      output <- output[, c(ncol(output), seq_len(ncol(output) - 1))]
     }
 
     # remove duty cycle range when by.sound.file = TRUE

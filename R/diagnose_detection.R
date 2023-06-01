@@ -110,7 +110,7 @@ diagnose_detection <-
             by_diag$by <- names(split_det)[x]
 
             # order columns
-            by_diag <- by_diag[, c(ncol(by_diag), 1:(ncol(by_diag) - 1))]
+            by_diag <- by_diag[, c(ncol(by_diag), seq_len(ncol(by_diag) - 1))]
 
             # rename by column
             names(by_diag)[1] <- by
