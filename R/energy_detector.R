@@ -316,7 +316,7 @@ energy_detector <-
               detections_df$ovlp.sels <- NA
 
               # calculate overlapping selection after adding hope time
-              for(e in 1:(nrow(detections_df) - 1)) {
+              for(e in seq_len(nrow(detections_df) - 1)) {
                 # if overlap
                   if (detections_df$end[e] + hold.time / 1000 >= detections_df$start[e + 1]){
 
